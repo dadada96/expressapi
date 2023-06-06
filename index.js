@@ -30,6 +30,8 @@ app.get('/users', (req, res) => {
     request(options, function (error, response) {
         if (error) throw new Error(error);
         console.log(response.body);
+
+        res.status(200).send(response.body)
     });
 
 })
