@@ -19,7 +19,7 @@ app.get('/users', (req, res) => {
     //     res.status(200).send(body)
     // })
 
-    var request = require('request');
+    // var request = require('request');
     var options = {
         'method': 'GET',
         'url': 'https://login.meteomatics.com/api/v1/token',
