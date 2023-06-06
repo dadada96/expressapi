@@ -19,3 +19,5 @@ app.get('/users', (req, res) => {
         res.status(200).send(body)
     })
 })
+
+module.exports = app;
