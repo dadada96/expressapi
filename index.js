@@ -2,6 +2,9 @@ const app = require('express')();
 const PORT = 2000;
 
 const request = require('request')
+const cors = require('cors')
+
+app.use(cors())
 
 app.listen(
     PORT,
