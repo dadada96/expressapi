@@ -39,4 +39,9 @@ app.get('/users', (req, res) => {
 
 })
 
+app.get('/userAgent', (req, res) => {
+    const userAgent = req.get('User-Agent')
+    res.send(userAgent)
+})
+
 module.exports = app;
